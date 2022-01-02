@@ -1,0 +1,26 @@
+header{
+  background-color: #43d923; /*color of upper header*/
+  align-items: center;
+  display: flex;
+  color: green; /*text color in the header*/
+  flex: 1;
+  justify-content: left;
+  flex-shrink: 1;
+  border-radius: 25px;
+}
+header>h1{
+  margin: 5px 2px 2px 5px;
+}
+.headerLogo{
+  max-width: 5%;
+  border-radius: 50%;
+}
+.dark{
+  background-color: #21252B; /*upper part of footer*/
+}
+.light{
+  background-color:#282C34;/*lower part of footer*/
+}
+body{
+  background-color: #A70F4B; /*body color*/
+}
