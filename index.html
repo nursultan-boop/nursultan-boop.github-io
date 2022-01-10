@@ -3,16 +3,117 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <title>SmartPhone</title>
   </head>
-  <header>
-    <img class="headerLogo" src="https://krasivosti.pro/uploads/posts/2021-04/1617917158_31-p-kot-v-chernikh-ochkakh-33.jpg" alt="">
-    <h1 class="HomeBtn">Home</h1>
-    <h1 class ="PhoneBtn">Phones</h1>
-    <h1 class="AboutBnt">About us</h1>
-  </header>
-  <body>
+  <div class="header">
+      <div class="header_inner">
+          <div class="logo">Smartfones</div>
 
+<editor-fold nav>
+          <nav class="nav">
+            <a class="nav_link" href="#">HOME</a>
+              <a class="nav_link" href="#">ACCOUNT</a>
+              <a class="nav_link" href="#">MARKET</a>
+              <div class="dropdown">
+                  <button class="dropbtn">ABOUT</button>
+                  <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                  </div>
+              </div>
+          </nav>
+</editor-fold>
+      </div>
+  <body>
+    <div class="tele">
+        <div class="slideshow-container">
+                  <div class="mySlides fade" style="Display:block">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="gt1.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="gt2.jpg" style="width:100%">
+                  </div>
+                  <div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                </div>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th>Launch date:</th>
+              <th>2021, July 30</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Body:</td>
+              <td>Dimensions</td>
+              <td>159.2 mm x 73.5 mm x 8.0/8.7 mm (depending on color)</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>174/180 g (depending on color) (6.14 oz)</td>
+            </tr>
+            <tr>
+              <td>SIM</td>
+              <td>Dual SIM (Nano-SIM, dual stand-by)</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Display:</td>
+              <td>Type</td>
+              <td>Super AMOLED, 120Hz, 1000 nits (peak)</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>6.43 inches, 99.8 cm2 (~85.3% screen-to-body ratio)</td>
+            </tr>
+            <tr>
+              <td>Resolution</td>
+              <td>1080 x 2400 pixels, 20:9 ratio (~409 ppi density)</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Platform:</td>
+              <td>OS</td>
+              <td>Android 11, Realme UI 2.0</td>
+            </tr>
+            <tr>
+              <td>Chipset</td>
+              <td>Qualcomm SM7325 Snapdragon 778G 5G (6 nm)</td>
+            </tr>
+            <tr>
+              <td>CPU</td>
+              <td>Octa-core (4x2.4 GHz Kryo 670 &amp; 4x1.9 GHz Kryo 670)</td>
+            </tr>
+            <tr>
+              <td>GPU</td>
+              <td>Adreno 642L</td>
+            </tr>
+            <tr>
+              <td rowspan="5">MEMORY</td>
+              <td>Card slot</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Internal</td>
+              <td>128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM</td>
+            </tr>
+            <tr>
+              <td>Type</td>
+              <td>UFS</td>
+            </tr>
+          </tbody>
+          </table>
+
+    </div>
+ </div>
   </body>
   <footer>
     <div class="dark">Site is made for demonstration purposes. All copyrights not reserved :)</div>
