@@ -1,123 +1,263 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <title>SmartPhone</title>
-  </head>
-  <div class="header">
-      <div class="header_inner">
-          <div class="logo">Smartfones</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Home</title>
+      <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<editor-fold nav>
-          <nav class="nav">
-            <a class="nav_link" href="#">HOME</a>
-              <a class="nav_link" href="#">ACCOUNT</a>
-              <a class="nav_link" href="#">MARKET</a>
-              <div class="dropdown">
-                  <button class="dropbtn">ABOUT</button>
-                  <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                  </div>
-              </div>
-          </nav>
-</editor-fold>
-      </div>
-  <body>
-    <div class="tele">
-        <div class="slideshow-container">
-                  <div class="mySlides fade" style="Display:block">
-                    <div class="numbertext">1 / 2</div>
-                    <img src="gt1.jpg" style="width:100%">
-                  </div>
 
-                  <div class="mySlides fade">
-                    <div class="numbertext">2 / 2</div>
-                    <img src="gt2.jpg" style="width:100%">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      <img src="nfe.png" alt="" width="30" height="28">
+    </a>
+      <a class="navbar-brand" href="#">NFY</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="about.html">About us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="promos">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="promos/p1.png" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="promos/p2.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="promos/p3.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<br><br>
+
+  <div class="row">
+
+  <div class="col-md-8">
+    <p class="h1">Popular</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse1">Realme GT ME</a>
+                    </h4>
                   </div>
-                  <div>
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
                   </div>
-                  <br>
                 </div>
-          <table class="tg">
-          <thead>
-            <tr>
-              <th>Launch date:</th>
-              <th>2021, July 30</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="3">Body:</td>
-              <td>Dimensions</td>
-              <td>159.2 mm x 73.5 mm x 8.0/8.7 mm (depending on color)</td>
-            </tr>
-            <tr>
-              <td>Weight</td>
-              <td>174/180 g (depending on color) (6.14 oz)</td>
-            </tr>
-            <tr>
-              <td>SIM</td>
-              <td>Dual SIM (Nano-SIM, dual stand-by)</td>
-            </tr>
-            <tr>
-              <td rowspan="3">Display:</td>
-              <td>Type</td>
-              <td>Super AMOLED, 120Hz, 1000 nits (peak)</td>
-            </tr>
-            <tr>
-              <td>Size</td>
-              <td>6.43 inches, 99.8 cm2 (~85.3% screen-to-body ratio)</td>
-            </tr>
-            <tr>
-              <td>Resolution</td>
-              <td>1080 x 2400 pixels, 20:9 ratio (~409 ppi density)</td>
-            </tr>
-            <tr>
-              <td rowspan="4">Platform:</td>
-              <td>OS</td>
-              <td>Android 11, Realme UI 2.0</td>
-            </tr>
-            <tr>
-              <td>Chipset</td>
-              <td>Qualcomm SM7325 Snapdragon 778G 5G (6 nm)</td>
-            </tr>
-            <tr>
-              <td>CPU</td>
-              <td>Octa-core (4x2.4 GHz Kryo 670 &amp; 4x1.9 GHz Kryo 670)</td>
-            </tr>
-            <tr>
-              <td>GPU</td>
-              <td>Adreno 642L</td>
-            </tr>
-            <tr>
-              <td rowspan="5">MEMORY</td>
-              <td>Card slot</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td>Internal</td>
-              <td>128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM</td>
-            </tr>
-            <tr>
-              <td>Type</td>
-              <td>UFS</td>
-            </tr>
-          </tbody>
-          </table>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse2">Realme GT ME</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
+                  </div>
+                </div>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse3">Realme GT ME</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
+                  </div>
+                </div>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
 
     </div>
- </div>
-  </body>
-  <footer>
-    <div class="dark">Site is made for demonstration purposes. All copyrights not reserved :)</div>
-    <div class="light">I have to add smth else here
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse4">Realme GT ME</a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
+                  </div>
+                </div>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse5">Realme GT ME</a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
+                  </div>
+                </div>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img src="gt1.jpg" alt="" class="img-rounded">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" href="#collapse6">Realme GT ME</a>
+                    </h4>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse">
+                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</div>
+                  </div>
+                </div>
+
+          <p>250$</p>
+          <a href="#" class="btn btn-info" role="button">Buy</a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <h1>reklama</h1>
+    </div>
+    <p class="h1">News</p>
+    <div class="col-md">
+
+      <div class="thumbnail">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+              </div>
+      </div>
+      <div class="thumbnail">
+        <h1>reklama</h1>
+      </div>
+  </div>
+
+
+    </div>
+
+
+</div>
+</body>
+<footer class="container-fluid bg-4 text-center" style ="background-color: #2f2f2f;color: #fff;padding-top: 70px; padding-bottom: 70px;">
+  <p>NFE site</p>
+  <p>All rights not reserved</p>
+</footer>
 </html>
