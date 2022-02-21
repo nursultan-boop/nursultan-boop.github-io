@@ -10,11 +10,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto+Serif:wght@200&family=Source+Sans+Pro&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
 </head>
 <body >
 
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse     " style="margin-bottom: 0px">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
@@ -29,7 +31,7 @@
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="regist.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
@@ -45,7 +47,7 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner justify-content-center" >
     <div class="item active">
       <img src="promos/p1.png" alt="Los Angeles">
     </div>
@@ -74,40 +76,37 @@
 
   <div class="row" style="padding:15px">
 
-  <div class="col-md-8">
+  <div class="col-md-8" >
     <p class="h1">Popular</p>
     <div class="row">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="gt1.jpg" alt="" class="img-rounded">
+      <div class="col-md-4" >
+        <div class="thumbnail" id="img1">
+          <img src="gt1.jpg" alt="" class="img-rounded"  onmouseover="imgChanger()" onmouseleave="imgFFF()">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse1">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse1" class="phoneName"></a>
                     </h4>
                   </div>
                   <div id="collapse1" class="panel-collapse collapse">
-                      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat.</div>
+                      <div class="panel-body"></div>
                   </div>
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button"  onclick="playMus()">Buy</a>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="gt1.jpg" alt="" class="img-rounded">
+        <div class="thumbnail"  id="img2">
+          <img src="gt1.jpg" alt="" class="img-rounded"   onmouseover="imgChanger()" onmouseleave="imgFFF()">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse2">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse2" class="phoneName">Realme GT ME</a>
                     </h4>
                   </div>
                   <div id="collapse2" class="panel-collapse collapse">
@@ -119,18 +118,18 @@
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button" onclick="playMus()">Buy</a>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="thumbnail">
-          <img src="gt1.jpg" alt="" class="img-rounded">
+        <div class="thumbnail"  id="img3">
+          <img src="gt1.jpg" alt="" class="img-rounded" onmouseover="imgChanger()">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse3">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse3" class="phoneName">Realme GT ME</a>
                     </h4>
                   </div>
                   <div id="collapse3" class="panel-collapse collapse">
@@ -142,20 +141,20 @@
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button" onclick="playMus()" >Buy</a>
         </div>
       </div>
 
     </div>
     <div class="row">
       <div class="col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail"  id="img4">
           <img src="gt1.jpg" alt="" class="img-rounded">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse4">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse4" class="phoneName">Realme GT ME</a>
                     </h4>
                   </div>
                   <div id="collapse4" class="panel-collapse collapse">
@@ -167,18 +166,18 @@
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button" onclick="playMus()">Buy</a>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail"  id="img5">
           <img src="gt1.jpg" alt="" class="img-rounded">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse5">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse5" class="phoneName">Realme GT ME</a>
                     </h4>
                   </div>
                   <div id="collapse5" class="panel-collapse collapse">
@@ -190,18 +189,18 @@
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button" onclick="playMus()">Buy</a>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail"  id="img6">
           <img src="gt1.jpg" alt="" class="img-rounded">
 
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapse6">Realme GT ME</a>
+                      <a data-toggle="collapse" href="#collapse6" class="phoneName">Realme GT ME</a>
                     </h4>
                   </div>
                   <div id="collapse6" class="panel-collapse collapse">
@@ -213,51 +212,42 @@
                 </div>
 
           <p>250$</p>
-          <a href="#" class="btn btn-info" role="button">Buy</a>
+          <a href="#" class="btn btn-info" role="button" onclick="playMus()">Buy</a>
         </div>
       </div>
     </div>
   </div>
   <div class="col-md-4">
-    <div class="thumbnail">
-      <h1>reklama</h1>
-    </div>
     <p class="h1">News</p>
     <div class="col-md">
 
       <div class="thumbnail">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
+                <a class="fw-bold h3">Официально: realme Narzo 50 с экраном на 120 Гц и чипом MediaTek Helio G96 представят 24 февраля</a>
+          <br>
+          <br>
+                <a class="fw-bold h3" href="https://www.ixbt.com/news/2022/02/19/soc-tensor-2-samsung-google-pixel-7-pixel-7-pro.html">Кошачьи имена и SoC Tensor 2 с модемом Samsung. Появились подробности о смартфонах Google Pixel 7 и Pixel 7 Pro</a>
+          <br>
+          <br>
+                <a class="fw-bold h3"href=" https://www.ixbt.com/news/2022/02/14/rejting-stran-grazhdane-kotoryh-bolshe-vsego-zavisimy-ot-smartfonov.html">Рейтинг стран, граждане которых больше всего зависимы от смартфонов</a>
+          <br>
+          <br>
+          <a class="fw-bold h3"></a>
+                <a class="fw-bold h3"></a>
+                <a class="fw-bold h3"></a>
               </div>
       </div>
-      <div class="thumbnail">
-        <h1>reklama</h1>
-      </div>
+
   </div>
 
 
     </div>
-
-
-</div>
+  <footer class="container-fluid bg-2 text-center" style ="background-color: #2f2f2f;color: #fff;padding: 50px 50px;">
+      <p>NFE site</p>
+      <p>All rights not reserved</p>
+  </footer>
+  <audio src="sss.mp3" id="sss"></audio>
+<script src="scp.js">
+</script>
 </body>
-<footer class="container-fluid bg-4 text-center" style ="background-color: #2f2f2f;color: #fff;padding-top: 70px; padding-bottom: 70px;">
-  <p>NFE site</p>
-  <p>All rights not reserved</p>
-</footer>
+
 </html>

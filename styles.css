@@ -1,1 +1,9 @@
 .thumbnail img{  width: 50%;}
+
+.phoneName{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+nav{
+    font-family: 'Nunito Sans', sans-serif;
+}
